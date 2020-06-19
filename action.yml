@@ -10,9 +10,6 @@ inputs:
   version:
     description: "Jazzy Version"
     required: false
-  personal_access_token:
-    description: "Personal access token"
-    required: true
 runs:
   using: "node12"
   main: "index.js"

@@ -16,11 +16,6 @@ Arguments to pass to Jazzy
 
 Jazzy Version
 
-### `personal_access_token`
-
-**Required** Personal access token
-
-
 ## Outputs
 
 ### docs/ folder
@@ -32,9 +27,8 @@ The updated or newly generated documentation folder.
 ```yaml
 ...
     - name: Publish Jazzy Docs
-      uses: grkmndr/Jazzy-Publish-Action@v1
+      uses: grkmndr/jazzy-doc-generation-action@v1
       with:
-        personal_access_token: ${{ secrets.ACCESS_TOKEN }}
         config: .jazzy.yml
         args: "--theme fullwidth --author Johnny Appleseed"
         version: 0.11.2

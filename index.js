@@ -8,9 +8,6 @@ const context = github.context
 const jazzyVersion = core.getInput("version")
 const configFilePath = core.getInput("config")
 const jazzyArgs = core.getInput("args")
-const token = core.getInput("personal_access_token")
-
-const remote = `https://${token}@github.com/${context.repo.owner}/${context.repo.repo}.git`
 
 const generateJazzyInstallCommand = () => {
   let gemInstall = "sudo gem install jazzy"
