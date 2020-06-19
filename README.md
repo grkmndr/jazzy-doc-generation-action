@@ -8,7 +8,7 @@ This action runs "jazzy" command with the provided configuration options to gene
 
 Path to .jazzy.yml file - preferred.
 
-### `args`
+### `args`
 
 Arguments to pass to Jazzy
     
