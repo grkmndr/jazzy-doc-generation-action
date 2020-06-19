@@ -1,0 +1,21 @@
+name: "jazzy-doc-generation-action"
+description: "Generate Swift documentation with Jazzy"
+inputs:
+  config:
+    description: "Path to .jazzy.yml file - preferred"
+    required: false
+  args:
+    description: "Arguments to pass to Jazzy"
+    required: false
+  version:
+    description: "Jazzy Version"
+    required: false
+  personal_access_token:
+    description: "Personal access token"
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
+branding:
+  icon: "book"
+  color: "green"
